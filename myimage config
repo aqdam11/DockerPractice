@@ -1,0 +1,94 @@
+[
+    {
+        "Id": "sha256:655db27ec1ce87735294fe5b23d3ee924f0a5b37b0732f0e0a2a5d136dec4a22",
+        "RepoTags": [
+            "myimage:latest"
+        ],
+        "RepoDigests": [],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2024-01-06T08:21:55.478244455Z",
+        "Container": "",
+        "ContainerConfig": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": null,
+            "Cmd": null,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": null
+        },
+        "DockerVersion": "",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "80/tcp": {},
+                "8080/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "/bin/sh",
+                "-c",
+                "service nginx start && service jenkins start && tail -f /dev/null"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "22.04"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 867563412,
+        "VirtualSize": 867563412,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/xl81mgzd4u5zkwb7qizwkt8ti/diff:/var/lib/docker/overlay2/p1no7szlogjvqnuaux5awkpmh/diff:/var/lib/docker/overlay2/o5copgxvclyu7mbn6cbqvqvnq/diff:/var/lib/docker/overlay2/ebdz3iqs1yo6fs2jm8p3ivyaf/diff:/var/lib/docker/overlay2/ad8a9dad4d565f74d1f79743c41def89ad3f6425ede219e769de037efe2372a4/diff",
+                "MergedDir": "/var/lib/docker/overlay2/q58sh42zpznvfkkolpb6olgaw/merged",
+                "UpperDir": "/var/lib/docker/overlay2/q58sh42zpznvfkkolpb6olgaw/diff",
+                "WorkDir": "/var/lib/docker/overlay2/q58sh42zpznvfkkolpb6olgaw/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:a1360aae5271bbbf575b4057cb4158dbdfbcae76698189b55fb1039bc0207400",
+                "sha256:ee91711aab635a1f8c5855d3b13a5cf01682f750e5b2f505ca54b11d9b9666ae",
+                "sha256:06bb4cb57fc0b1c775d02115d886b750033003abfc67e061f11a451803584d3e",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:74ce78e1e48c23fe86eed17b81276637fa0b69cac2bb88723a3dd566c6eeacc3",
+                "sha256:ce25a852fef59718f8381c427c872f1009b1b036eb7031f7a7e71bd3a685b318"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2024-01-06T08:22:01.155098968Z"
+        }
+    }
+]
